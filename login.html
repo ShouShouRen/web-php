@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-TW-Hant">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>登入</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="flex justify-between">
+			<h2>管理員登入</h2>
+			<a href="createUser.html" class="btn btn-primary">建立新帳號</a>
+		</div>
+		<form action="loginUser.php" method="post">
+			<label for="username">帳號:</label>
+			<input type="text" name="username" id="username" placeholder="請輸入帳號" required><br>
+			<label for="pwd">密碼:</label>
+			<input type="password" name="pwd" placeholder="請輸入密碼" required>
+			<div style="text-align: center;">
+				<input type="submit" class="btn btn-lg-primary" value="登入">
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>
